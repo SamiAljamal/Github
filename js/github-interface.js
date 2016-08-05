@@ -1,8 +1,7 @@
 
 var gitHub = require('./../js/github.js').gitHubModule;
 
-$(document).ready(function(){
-  $("#results").hide();
+$(document).ready(function(){ 
   $("#form").submit(function(event){
     event.preventDefault();
     var username = $("#username").val();
