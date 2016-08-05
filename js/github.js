@@ -20,7 +20,7 @@ gitHub.prototype.getRepos = function(){
   $.get('https://api.github.com/users/'+username+'/repos?access_token=' + apiKey).then(function(response){
     console.log(response);
     response.forEach(function(repos){
-      $("#list").append("<li>" + repos.name + "<ul><li>Description: " + repos.description + "</li><li>Date: "+ moment(repos.created_at).format("MM/DD/YY") +"</li></li></ul></li>");
+      $("#list").append("<li><span class='fight'>" + repos.name + "</span><ul><li><span class ='discrp'>Description: " + repos.description + "</li></span><li>Date: "+ moment(repos.created_at).format("MM/DD/YY") +"</li></li></ul></li>");
     });
   }).fail(function(error){
     alert(error.responseJSON.message);
