@@ -1,7 +1,7 @@
 
 var gitHub = require('./../js/github.js').gitHubModule;
 
-$(document).ready(function(){ 
+$(document).ready(function(){
   $("#form").submit(function(event){
     event.preventDefault();
     var username = $("#username").val();
@@ -9,5 +9,6 @@ $(document).ready(function(){
     result.getRepos();
     result.Getuserinfo();
     $("#results").show();
+    $("#list").empty();
   });
 });

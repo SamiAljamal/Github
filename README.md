@@ -8,6 +8,7 @@ This website allows a user to input a github user id and the output will list th
 ## Setup/Installation Requirements
 
 * Clone this repository to /Desktop
+* Create .env file and follow the Github Api instructions below.
 * ``` $ npm install ``` to pull dependencies listed in package.json
 * ``` $ bower install ``` to pull dependencies listed in bower.json
 * ``` $ gulp build -production ``` to build tasks list in gulp.js file.
